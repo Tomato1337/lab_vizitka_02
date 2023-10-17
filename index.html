@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 class="header__logo">визитка</h1>
+                <div class="header__menu menu">
+                    <button class="menu__btn">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-list"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 
+        1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 
+        .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                            />
+                        </svg>
+                    </button>
+                    <ul class="menu__list hide">
+                        <li class="menu__item">
+                            <a
+                                data-about="about"
+                                href="#info"
+                                class="menu__link"
+                            >
+                                О себе
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a
+                                data-portfolio="portfolio"
+                                href="#portfolio"
+                                class="menu__link"
+                            >
+                                Портфолио
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info" id="info">
+                <h2 class="info__title">О себе</h2>
+                <h3 class="info__fullname">Тюнин Илья Андреевич</h3>
+                <p>
+                    Мне 18 лет. Я являюсь активным разработчиком и обучаюсь в
+                    университете МТУСИ
+                </p>
+                <div class="social">
+                    <a href="https://t.me/tomato1337" target="_blank">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-name="Layer 1"
+                            viewBox="0 0 24 24"
+                            id="telegram"
+                        >
+                            <path
+                                d="M11.99432,2a10,10,0,1,0,10,10A9.99917,9.99917,0,0,0,11.99432,2Zm3.17951,15.15247a.70547.70547,0,0,1-1.002.3515l-2.71467-2.10938L9.71484,17.002a.29969.29969,0,0,1-.285.03894l.334-2.98846.01069.00848.00683-.059s4.885-4.44751,5.084-4.637c.20147-.189.135-.23.135-.23.01147-.23053-.36152,0-.36152,0L8.16632,13.299l-2.69549-.918s-.414-.1485-.453-.475c-.041-.324.46649-.5.46649-.5l10.717-4.25751s.881-.39252.881.25751Z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Tomato1337" target="_blank">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            data-name="Layer 1"
+                            viewBox="0 0 24 24"
+                            id="github"
+                        >
+                            <path
+                                d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"
+                            ></path>
+                        </svg>
+                    </a>
+                </div>
+                <button data-portfolio="portfolio" class="portfolio__btn">
+                    <span>Открыть портфолио</span>
+                </button>
+            </div>
+            <div class="portfolio" id="portfolio">
+                <h2 class="info__title">Портфолио</h2>
+                <div class="images">
+                    <img src="img/image.png" alt="" />
+                    <img src="img/image2.png" alt="" />
+                    <img src="img/image3.png" alt="" />
+                    <img src="img/image2.png" alt="" />
+                    <img src="img/image4.png" alt="" />
+                    <img src="img/image5.png" alt="" />
+                </div>
+                <button data-about="about" class="portfolio__btn about__btn">
+                    <span>Открыть блок о себе</span>
+                </button>
+                <!-- Ваш код, где блок со скриншотом сваггера с лабораторной работы №2... -->
+            </div>
+        </div>
+        <div class="wrapper">
+            <img src="img/image.png" alt="" />
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
