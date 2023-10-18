@@ -29,6 +29,9 @@ button {
 .hide {
 display: none !important;
 }
+.menu__link {
+    cursor: pointer;
+}
 .container {
 max-width: 1140px;
 margin: 0 auto;
@@ -88,7 +91,7 @@ text-decoration: none;
 .portfolio img {
     display: block;
     width: 100%;
-    page-break-inside: avoid;
+    /* page-break-inside: avoid; */
     margin-bottom: 5px;
 }
 .info {
@@ -131,8 +134,12 @@ text-decoration: none;
     object-fit: cover;
 }
 .images {
-    column-count: 2;
+    /* column-count: 2; */
+    max-width: 1140px;
     gap: 5px;
+}
+.images__item {
+    width: 500px !important;
 }
 @media (min-width: 600px) {
     .info {
