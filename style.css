@@ -51,6 +51,7 @@ color: #0f0f0f;
 }
 .header__menu {
 position: relative;
+display: none;
 }
 .header__menu .menu__btn {
 background: transparent;
@@ -141,9 +142,24 @@ text-decoration: none;
 .images__item {
     max-width: 560px !important;
 }
+.header__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    column-gap: 20px;
+}
 @media (min-width: 600px) {
     .info {
         width: 45%;
+    }
+}
+@media (max-width: 600px) {
+    .header__menu {
+        display: block;
+    }
+    .header__links {
+        display: none;
     }
 }
 @keyframes menu-showing {
