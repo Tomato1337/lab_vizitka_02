@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const msnry = new Masonry(elem, {
         // options
         itemSelector: '.images__item',
-        columnWidth: 560,
+        columnWidth: 565,
         gutter: 10,
     })
 
